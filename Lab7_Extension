@@ -1,0 +1,24 @@
+import random
+# Put Minecraft on sale
+item1.set_price(25)
+print(item1.name + " is on sale for $" + str(item1.price) + "!")
+messages = [
+    "🎮 Welcome to the Video Game Store!",
+    "🔥 Great deals on games today!",
+    "👾 Ready to level up? Let's shop!"
+]
+
+print("\n" + random.choice(messages))
+print("\nHere is our menu:")
+
+for number, item in store.items():
+    print(number + ": " + item.name + " - $" + str(item.price))
+    print("Invalid choice.")
+    print("Sorry, that's not on the menu!")
+    print("\n----- Your Receipt -----")
+
+for item in cart.items:
+    print(item.name + " ..... $" + str(item.price))
+
+print("You bought " + str(len(cart.items)) + " item(s).")
+s
